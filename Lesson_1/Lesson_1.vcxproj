@@ -39,7 +39,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>..\temp\$(ProjectName)</OutDir>
+    <OutDir>..\..\temp\$(Configuration)\$(ProjectName)</OutDir>
+    <IntDir>..\..\temp\$(Configuration)\$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\temp\$(Configuration)\$(ProjectName)</OutDir>
+    <IntDir>..\..\temp\$(Configuration)\$(ProjectName)</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

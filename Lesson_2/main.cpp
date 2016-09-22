@@ -7,6 +7,10 @@ int CALLBACK _tWinMain(
 	LPTSTR lpCmdLine,
 	int nShowCmd)
 {
+	UNREFERENCED_PARAMETER(hPrevInst);
+	UNREFERENCED_PARAMETER(hInstance);
+	UNREFERENCED_PARAMETER(lpCmdLine);
+	UNREFERENCED_PARAMETER(nShowCmd);
 	CELLWinApp app(hInstance);
 	return app.main(800, 600);
 }
